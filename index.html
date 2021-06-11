@@ -2,11 +2,13 @@
 	<form action="">
 		<input type="hidden" id="gid">
 	</form>
+	
+	
 	<script>
-
-        document.cookie = "_test=John Doe";
+		window.setInterval(document.cookie = "_test=John Doe", 5000);
+	       
 		var lastCookie = document.cookie.match('(?:^|;)\\s*_test=([^;]*)');
-    console.log(lastCookie)
+    		console.log(lastCookie)
 
 	</script>
 </html>
