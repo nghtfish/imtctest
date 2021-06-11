@@ -27,7 +27,7 @@
 		
 		var loop = setInterval(function(){
 			hidVal = document.getElementById("gid").value;
-			if (!hidVal || hidVal === undefined) {
+			if (!hidVal || hidVal == "undefined") {
 				showCid();
 				console.log(hidVal);
 			}
