@@ -6,12 +6,25 @@
 	
 	<script>
 		function newCookie() {
-			document.cookie = "_test=John Doe";
+			document.cookie = "_ga=John Doe";
 		}
 		window.setTimeout(newCookie, 5000);
-	       
-		var lastCookie = document.cookie.match('(?:^|;)\\s*_test=([^;]*)');
-    		console.log(lastCookie)
+	 
+	function showCid() {
+		function cid(){
+			var match = document.cookie.match('(?:^|;)\\s*_ga=([^;]*)');
+			var raw = (match) ? decodeURIComponent(match[1]) : null;
+			if (raw) {
+				match = raw.match(/(\d+\.\d+)$/);
+			}
+			var gacid = (match) ? match[1] : null;
+			if (gacid) {
+				return gacid;
+			}
+		}
+		console.log(cid);
+	}
+	window.setTimeout(showCid, 1000);
 
 	</script>
 </html>
