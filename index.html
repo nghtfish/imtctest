@@ -4,9 +4,9 @@
 	</form>
 	<script>
 
-    var lastCookie = document.cookie.match('(?:^|;)\\s*_test=([^;]*)');
+        document.cookie = "_test=John Doe";
+		var lastCookie = document.cookie.match('(?:^|;)\\s*_test=([^;]*)');
     console.log(lastCookie)
-    document.cookie = "_test=John Doe";
 
 	</script>
 </html>
