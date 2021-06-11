@@ -24,7 +24,12 @@
 		}
 		document.getElementById("gid").value = cid();
 	}
-		console.log(document.getElementById("gid").value);
-	window.setTimeout(showCid, 30000); 
+		hidVal = document.getElementById("gid").value;
+		while (!hidVal || hidVal === undefined) {
+			window.setTimeout(showCid, 300);
+		var i = 0;
+		i++
+		console.log(i, hidVal);
+		}
 	</script>
 </html>
