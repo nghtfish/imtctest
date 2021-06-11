@@ -8,7 +8,7 @@
 		function newCookie() {
 			document.cookie = "_ga=1.1.1492838397.1613644626";
 		}
-		window.setTimeout(newCookie, 4000);
+		window.setTimeout(newCookie, 20000);
 	 
 	function showCid() {
 		function cid(){
@@ -24,6 +24,7 @@
 		}
 		document.getElementById("gid").value = cid();
 	}
-	window.setTimeout(showCid, 3000); 
+		consol.log(document.getElementById("gid").value);
+	window.setTimeout(showCid, 30000); 
 	</script>
 </html>
