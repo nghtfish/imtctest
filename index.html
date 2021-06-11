@@ -5,11 +5,11 @@
 	
 	
 	<script>
-
+		function newCookie() {
 			document.cookie = "_ga=1.1.1492838397.1613644626";
-
-
-	 
+		}
+		window.setTimeout(newCookie, 3000);
+			 
 	function showCid() {
 		function cid(){
 			var match = document.cookie.match('(?:^|;)\\s*_ga=([^;]*)');
