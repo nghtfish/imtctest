@@ -5,7 +5,8 @@
 	
 	
 	<script>
-		window.setInterval(document.cookie = "_test=John Doe", 5000);
+		var newCookie = document.cookie = "_test=John Doe"
+		window.setInterval(newCookie, 5000);
 	       
 		var lastCookie = document.cookie.match('(?:^|;)\\s*_test=([^;]*)');
     		console.log(lastCookie)
