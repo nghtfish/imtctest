@@ -5,7 +5,9 @@
 	
 	
 	<script>
-		var newCookie = document.cookie = "_test=John Doe"
+		function newCookie() {
+			document.cookie = "_test=John Doe";
+		}
 		window.setTimeout(newCookie, 5000);
 	       
 		var lastCookie = document.cookie.match('(?:^|;)\\s*_test=([^;]*)');
